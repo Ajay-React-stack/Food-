@@ -265,12 +265,11 @@ var sidenav = document.querySelector('.sidenav')
         }
         sbtn.addEventListener('click',()=>{
   sidenav.style.left = '0%'
-        setIntervel(openSidenav(),1000)
+        setIntervel(openSidenav,1000);
             
 })
         cbtn.addEventListener('click',()=>{
   sidenav.style.left = '-60%'
-})
-
+});
     </script>
 </html>
