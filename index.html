@@ -224,19 +224,20 @@ html body{
     <table>
     <tr>
       <td><label for="Username">User Name :</label></td>
-      <td> <input type="text" id="Username" placeholder="Enter Your Name..."></td>
+      <td> <input type="text" id="Username" placeholder="Enter Your Name..." name="name"></td>
     </tr>
     <tr>
       <td><label for="Username">Email :</label></td>
-      <td>  <input type="email" id="Username" placeholder="Enter Your Email..."></td>
+      <td>  <input type="email" id="Username" placeholder="Enter Your Email..." name="email"></td>
     </tr>
     <tr>
-      <td><select>
-    <option value="">Cheese Pizza</option>
-    <option value="">Spicy Pizza</option>
-    <option value="">Pepper Hot Pizza</option>
+      <td>
+          <select>
+    <option value="" name="cheeze">Cheese Pizza</option>
+    <option value="" name="spicy">Spicy Pizza</option>
+    <option value="" name="pepper">Pepper Hot Pizza</option>
   </select></td>
-  <td><button type="submit" class="btn btn-danger" id="liveToastBtn">Order Now</button>
+  <td><input type="submit" value="Order Now!" class="btn btn-danger" id="liveToastBtn">
   </td>
    </tr>
   </table>
