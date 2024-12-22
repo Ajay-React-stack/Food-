@@ -29,9 +29,6 @@ html body{
      border-radius: 10px;
      padding : 10px;
   } 
-  .sidenav{
-      display : none;
-  }
   #btn{
     background : transparent;
     border : none;
@@ -263,11 +260,17 @@ html body{
 var cbtn = document.getElementById('cbtn')
 var sidenav = document.querySelector('.sidenav')
 
+        function openSidenav(){
+            sidenav.style.left = '-60%'
+        }
         sbtn.addEventListener('click',()=>{
   sidenav.style.left = '0%'
+        setIntervel(openSidenav(),1000)
+            
 })
         cbtn.addEventListener('click',()=>{
   sidenav.style.left = '-60%'
 })
+
     </script>
 </html>
