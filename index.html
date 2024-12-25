@@ -54,14 +54,11 @@ html body{
      border : 2px solid white;
      border-radius: 10px;
      padding : 10px;
-     width : 200px;
+     width : 250px;
      color : white;
   }
   label{
     color : white;
-  }
-  td{
-    padding : 05px;
   }
   .sidenav{
     background: black;
@@ -110,6 +107,9 @@ body::-webkit-scrollbar-thumb{
         transform: scale(1.2) translateY(-2px);
         transition: 1s ease;
         cursor : pointer;
+    }
+    #c{
+        transition: 1s ease;
     }
 </style>
 
@@ -264,11 +264,11 @@ body::-webkit-scrollbar-thumb{
     <table>
     <tr>
       <td><label for="Username">User Name :</label></td>
-      <td> <input type="text" id="Username" placeholder="Enter Your Name..." name="name"></td>
+      <td> <input type="text" id="Username" placeholder="Enter Your Name..." name="name" required></td>
     </tr>
     <tr>
       <td><label for="Username">Email :</label></td>
-      <td>  <input type="email" id="Username" placeholder="Enter Your Email..." name="email"></td>
+      <td>  <input type="email" id="Username" placeholder="Enter Your Email..." name="email" required></td>
     </tr>
     <tr>
       <td class="text-light">
@@ -277,7 +277,7 @@ body::-webkit-scrollbar-thumb{
          <td class="text-light"><input type="checkbox" name="Pepper Hot Pizza" id="ch">Pepper Hot Pizza </td>
     </tr>
   <tr>
-  <td><input type="submit" value="Order Now!" class="btn btn-danger" id="liveToastBtn" name="ordered">
+  <td><input type="submit"  class="btn btn-danger" id="liveToastBtn" name="ordered">Order Now!
   </td>
         </tr>
   </table>
