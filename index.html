@@ -104,9 +104,12 @@ body::-webkit-scrollbar-thumb{
     }
     #ch:hover{
         color : red;
+        cursor : pointer;
     }
     #c:hover{
         transform: scale(1.2) translateY(-2px);
+        transition: 1s ease;
+        cursor : pointer;
     }
 </style>
 
@@ -269,12 +272,11 @@ body::-webkit-scrollbar-thumb{
     </tr>
     <tr>
       <td>
-          <input type="checkbox" name="Cheese Pizza" id="ch">Cheese Pizza 
-          <input type="checkbox" name="Spicy Pizza" id="ch">Spicy Pizza 
-          <input type="checkbox" name="Pepper Hot Pizza" id="ch">Pepper Hot Pizza 
-      </td>
+          <input type="checkbox" name="Cheese Pizza" id="ch">Cheese Pizza</td>
+          <td><input type="checkbox" name="Spicy Pizza" id="ch">Spicy Pizza</td>
+         <td><input type="checkbox" name="Pepper Hot Pizza" id="ch">Pepper Hot Pizza </td>
     </tr>
-        <tr>
+  <tr>
   <td><input type="submit" value="Order Now!" class="btn btn-danger" id="liveToastBtn" name="ordered">
   </td>
         </tr>
