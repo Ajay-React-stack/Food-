@@ -99,6 +99,15 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom,blue,purple);
 }
+    #ch{
+        color : white;
+    }
+    #ch:hover{
+        color : red;
+    }
+    #c:hover{
+        transform: scale(1.2) translateY(-2px);
+    }
 </style>
 
 
@@ -156,8 +165,20 @@ body::-webkit-scrollbar-thumb{
   <div class="row">
     
     <div class="col">
-     
-     <div class="card mb-3 mt-5" style="width: 18rem;">
+
+     <div class="card mb-3 mt-5" style="width: 18rem;" id="c">
+  <img src="th.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cheeze Pizza🍕</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go Home</a>
+  </div>
+     </div>
+    </div>
+
+<div class="col">
+  
+  <div class="card mt-5" style="width: 18rem;" id="c">
   <img src="th.jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Cheeze Pizza🍕</h5>
@@ -169,19 +190,7 @@ body::-webkit-scrollbar-thumb{
 
 <div class="col">
   
-  <div class="card mt-5" style="width: 18rem;">
-  <img src="th.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Cheeze Pizza🍕</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go Home</a>
-  </div>
-</div>
-</div>
-
-<div class="col">
-  
-  <div class="card mb-5 mt-5" style="width: 18rem;">
+  <div class="card mb-5 mt-5" style="width: 18rem;" id="c">
   <img src="th (1).jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Spicy Stuffings Pizza 🍕</h5>
@@ -192,7 +201,7 @@ body::-webkit-scrollbar-thumb{
 </div>
 
 <div class="col">
-  <div class="card mt-5 mb-5" style="width: 18rem;">
+  <div class="card mt-5 mb-5" style="width: 18rem;" id="c">
   <img src="th (1).jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Spicy Stuffings Pizza 🍕</h5>
@@ -204,7 +213,7 @@ body::-webkit-scrollbar-thumb{
 
 
 <div class="col">
-  <div class="card mb-5" style="width: 18rem;">
+  <div class="card mb-5" style="width: 18rem;" id="c">
   <img src="th (2).jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Pepper Hot Pizza🔥 </h5>
@@ -215,7 +224,7 @@ body::-webkit-scrollbar-thumb{
 </div>
 
 <div class="col">
-  <div class="card mb-5" style="width: 18rem;">
+  <div class="card mb-5" style="width: 18rem;" id="c">
   <img src="th (2).jpeg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Pepper Hot Pizza 🍕</h5>
@@ -260,14 +269,15 @@ body::-webkit-scrollbar-thumb{
     </tr>
     <tr>
       <td>
-          <select>
-    <option value="" name="cheeze">Cheese Pizza</option>
-    <option value="" name="spicy">Spicy Pizza</option>
-    <option value="" name="pepper">Pepper Hot Pizza</option>
-  </select></td>
+          <input type="checkbox" name="Cheese Pizza" id="ch">Cheese Pizza 
+          <input type="checkbox" name="Spicy Pizza" id="ch">Spicy Pizza 
+          <input type="checkbox" name="Pepper Hot Pizza" id="ch">Pepper Hot Pizza 
+      </td>
+    </tr>
+        <tr>
   <td><input type="submit" value="Order Now!" class="btn btn-danger" id="liveToastBtn" name="ordered">
   </td>
-   </tr>
+        </tr>
   </table>
   </center>
  </form>
